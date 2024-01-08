@@ -1,15 +1,15 @@
 # Azure-Honeypot-RDP-Cyber-Attack-Simulation
 ![Azure Honeypot Diagram](https://i.imgur.com/nN8hOBp.png)
 
-### Introduction
+## Introduction
 
 In this lab session, my objective is to establish a honeypot within the Microsoft Azure framework. In simple terms, a cybersecurity honeypot functions as a security mechanism, creating a virtual trap within a controlled and secure environment to attract potential attackers. The intention is to utilize this intentionally compromised computer system to study attacker methodologies, analyze various threats, and enhance security protocols. The primary goal of this lab is to acquire proficiency in collecting attack log data from the honeypot, querying it through a Security Information and Event Management (SIEM) system, and presenting the information in a comprehensible manner. Specifically, in this instance, the attack data will be visually represented on a global map, categorized by event count and geolocation.
 
-### Objectives
+## Objectives
 
 Configuring and deploying Azure resources, including virtual machines, Log Analytics Workspaces, and Azure Sentinel, is a key focus. The role entails practical experience and understanding of a SIEM, specifically Microsoft’s Azure Sentinel.
 
-### Primary Responsibilities
+## Primary Responsibilities
 
 **1. VM Creation and Configuration** 
 
@@ -33,31 +33,32 @@ Configuring and deploying Azure resources, including virtual machines, Log Analy
 
 - Include graphs in the workbook to illustrate the frequency and geographical distribution of failed RDP attempts
 
-### Lab Features
+## Lab Features
 
 **RDP Event Fail Logs**
 
-![Image](https://github.com/users/sindycp/projects/1/assets/64988485/4f864f6a-696d-4c75-8568-b6bc2453936a)
+![Image](https://i.imgur.com/pTZZzuP.png)
 
 RDP failed logon failures are extracted from the Windows Event Viewer
 
 **Custom PowerShell Script Parsing Data From 3rd Party API**
 
-![Image](https://github.com/users/sindycp/projects/1/assets/64988485/1eeb9ef5-d6d2-486c-9570-51f9c0090754)
+![Image](https://i.imgur.com/qnVeCcV.png)
 
 A custom PowerShell script is used to enrich logs with geolocation data, providing a comprehensive view of attackers' locations using the ipgeolocation.io API.
 
-**Log Analytics and Microsoft Sentinel Workbook**
+**Log Analytics**
 
-![Image](https://github.com/users/sindycp/projects/1/assets/64988485/8d916e1a-0b9b-4da3-ac4e-0a3a245807f9)
+![Image](https://i.imgur.com/RzyFs2E.png)
 
 Connects the VM to Log Analytics, using KQL to abstract raw data from RDP failed logs.
 
-![Image](https://github.com/users/sindycp/projects/1/assets/64988485/e6ef3019-5bed-4e16-8880-e2f2a4aaa9fe)
+**Global Attack Visual via Microsoft Sentinel Workbook**
+![Image](https://i.imgur.com/AEtA3RT.png)
 
 After transmitting enriched data to Microsoft Sentinel's workbook this attack map reveals numerous RDP and SMB failures, highlighting persistent attempts by potential attackers. It emphasizes the critical need to secure remote access and file-sharing services against unauthorized access and cyber threats.
 
-### Lessons Learned
+## Lessons Learned
 
 **Honeypot Impact:** Implementing a cybersecurity honeypot in Azure proved invaluable for studying attackers and fortifying security.
 
