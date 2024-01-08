@@ -1,5 +1,5 @@
 # Azure-Honeypot-RDP-Cyber-Attack-Simulation
-![Image](https://github.com/users/sindycp/projects/1/assets/64988485/f3d8aa69-78e1-4b02-a16e-6cd513dc8367)
+![Azure Honeypot Diagram](https://i.imgur.com/nN8hOBp.png)
 
 ### Introduction
 
