@@ -1,4 +1,4 @@
-# Azure-Honeypot-RDP-Cyber-Attack-Simulation
+# Azure Honeypot RDP Cyber Attack Simulation
 ![Azure Honeypot Diagram](https://i.imgur.com/nN8hOBp.png)
 
 ## Introduction
